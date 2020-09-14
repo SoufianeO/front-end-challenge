@@ -20,7 +20,7 @@ export class RepoListComponent implements OnInit {
     });
   }
   onChangePage(event: number){
-    this.router.navigate(['/Repositories', event]);
+    this.router.navigate(['/Repos', event]);
   }
 
 }

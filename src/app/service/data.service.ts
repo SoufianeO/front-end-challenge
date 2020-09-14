@@ -20,7 +20,7 @@ export class DataService {
         for (const elem of resp.items) {
         this.repositories.push(new Repo( elem.name, elem.description,
           elem.owner.login, elem.owner.avatar_url,
-          elem.stargazers_count, elem.open_issues_count ));
+          elem.stargazers_count, elem.open_issues_count, elem.created_at));
       }
         return this.repositories;
     });

@@ -13,7 +13,7 @@
           <a  class="btn btn-primary text-white" *ngIf="repository.stars < 1000"> Stars: {{ repository.stars }}</a>
           <a  class="btn btn-danger text-white" style="margin-left: 5px; margin-right: 10px; width: 100px;" *ngIf="repository.issues >= 1000"> Issues {{repository.issues/1000 | number: '1.1-1' }}K</a>
           <a  class="btn btn-danger text-white" style="margin-left: 5px; margin-right: 10px; width: 100px;" *ngIf="repository.issues < 1000"> Issues {{repository.issues}}</a>
-          Submited 30 days ago by {{ repository.userName}}
+          Submited at {{repository.creationTime | date:'shortDate'}} by {{ repository.userName}}
         </div>
       </div>
     </div>
