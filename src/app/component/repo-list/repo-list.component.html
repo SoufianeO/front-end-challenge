@@ -1,1 +1,5 @@
-<p>repo-list works!</p>
+<div class="container">
+    <app-repo-pagination [currentPage]="page" (changePage)="onChangePage($event)"> </app-repo-pagination>
+    <app-repo-element *ngFor="let repos of repositories" [repository]="repos"> </app-repo-element>
+  </div>
+  

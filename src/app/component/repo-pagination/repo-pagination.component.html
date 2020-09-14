@@ -1,0 +1,14 @@
+<nav  aria-label="Page navigation " style="top: 0; margin: 20px;">
+    <ul class="pagination justify-content-center">
+      <li class="page-item ">
+        <button class="page-link"  (click)="onChange(currentPage -1)" [disabled]="currentPage == 1" >Previous</button>
+      </li>
+      <li class="page-item active"><a class="page-link" (click)="onChange(currentPage )">{{currentPage}}</a></li>
+      <li class="page-item "><a class="page-link" (click)="onChange(currentPage+1)"  > {{ currentPage +1 }}</a></li>
+      <li class="page-item"><a class="page-link" (click)="onChange(currentPage +2)" >{{currentPage +2}}</a></li>
+      <li class="page-item">
+        <button class="page-link" (click)="onChange(currentPage +1)">Next</button>
+      </li>
+    </ul>
+  </nav>
+  
