@@ -9,8 +9,8 @@
         <div class="col-md-9">
           <h5 class="card-title"> {{repository.repoName}}</h5>
           <p class="card-text"> {{repository.description}}</p>
-          <a  class="btn btn-primary text-white" *ngIf="repository.stars >=1000" > Stars: {{ repository.stars/1000 | number: '1.1-1' }}K</a>
-          <a  class="btn btn-primary text-white" *ngIf="repository.stars < 1000"> Stars: {{ repository.stars }}</a>
+          <a  class="btn btn-warning text-white" *ngIf="repository.stars >=1000" > <i class="fa fa-star" aria-hidden="true"></i> {{ repository.stars/1000 | number: '1.1-1' }}K</a>
+          <a  class="btn btn-warning text-white" *ngIf="repository.stars < 1000"> <i class="fa fa-star" aria-hidden="true"></i> {{ repository.stars }}</a>
           <a  class="btn btn-danger text-white" style="margin-left: 5px; margin-right: 10px; width: 100px;" *ngIf="repository.issues >= 1000"> Issues {{repository.issues/1000 | number: '1.1-1' }}K</a>
           <a  class="btn btn-danger text-white" style="margin-left: 5px; margin-right: 10px; width: 100px;" *ngIf="repository.issues < 1000"> Issues {{repository.issues}}</a>
           Submited at {{repository.creationTime | date:'shortDate'}} by {{ repository.userName}}
