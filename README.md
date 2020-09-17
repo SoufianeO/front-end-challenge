@@ -1,7 +1,7 @@
 # FrontEndChallenge
 
 #### List of the best rated github accounts, with the number of stars and isses
-##Screen shot of the app
+
 ![alt text](https://github.com/SoufianeO/front-end-challenge/blob/master/screen.gif?raw=true)
 
 
