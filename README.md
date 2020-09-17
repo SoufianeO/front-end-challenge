@@ -1,8 +1,8 @@
 # FrontEndChallenge
 
 #### List of the best rated github accounts, with the number of stars and isses
-###Screen shot of the app
-![alt text](https://github.com/SoufianeO/front-end-challenge/screen.gif?raw=true)
+##Screen shot of the app
+![alt text](https://github.com/SoufianeO/front-end-challenge/blob/master/screen.gif?raw=true)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
